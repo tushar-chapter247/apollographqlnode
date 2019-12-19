@@ -1,23 +1,28 @@
 {
-  "name": "apollognode",
-  "version": "1.0.0",
-  "description": "Node js server with Apollo server, Express",
-  "main": "index.js",
-  "scripts": {
-    "start": "nodemon --exec babel-node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Tushar Goyal",
-  "license": "MIT",
-  "devDependencies": {
-    "@babel/core": "^7.7.7",
-    "@babel/node": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
-    "nodemon": "^2.0.2"
-  },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1"
-  }
+	"name": "apollognode",
+	"version": "1.0.0",
+	"description": "Node js server with Apollo server, Express",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon --exec babel-node src/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"lint:fix": "yarn run prettier:fix",
+		"prettier:cli": "prettier \"**/*.ts\" \"**/*.tsx\" \"**/*.js\"",
+		"prettier:check": "yarn run prettier:cli -- -l",
+		"prettier:fix": "yarn run prettier:cli -- --write"
+	},
+	"author": "Tushar Goyal",
+	"license": "MIT",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.7.7",
+		"@babel/node": "^7.7.7",
+		"@babel/preset-env": "^7.7.7",
+		"nodemon": "^2.0.2",
+		"prettier": "^1.19.1"
+	}
 }
