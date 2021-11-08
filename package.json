@@ -14,7 +14,7 @@
 	"author": "Tushar Goyal",
 	"license": "MIT",
 	"dependencies": {
-		"apollo-server": "^2.9.14",
+		"apollo-server": "^2.25.3",
 		"apollo-server-express": "^2.9.14",
 		"cors": "^2.8.5",
 		"dotenv": "^8.2.0",
